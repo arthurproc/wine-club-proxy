@@ -1,5 +1,6 @@
 const express = require('express');
 const axios = require('axios').default;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -27,6 +28,6 @@ app.get('/modalities/:id', async (req, res) => {
     return res.json(response.data);
 });
 
-app.listen(3000, () => {
-    console.log("App is listenning on PORT 3000");
+app.listen(PORT, () => {
+    console.log(`App is listenning on PORT ${PORT}`);
 });
