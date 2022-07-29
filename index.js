@@ -27,6 +27,6 @@ app.get('/modalities/:id', async (req, res) => {
     return res.json(response.data);
 });
 
-app.listen(80, () => {
-    console.log("App is listenning on PORT 80");
+app.listen(3000, () => {
+    console.log("App is listenning on PORT 3000");
 });
